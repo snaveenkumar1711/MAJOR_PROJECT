@@ -1,0 +1,142 @@
+$date
+	Thu May 15 00:23:45 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module ALU_tb $end
+$var wire 1 ! ALU_result_valid_tb $end
+$var wire 16 " ALU_result_tb [15:0] $end
+$var reg 4 # ALU_function_tb [3:0] $end
+$var reg 8 $ A_tb [7:0] $end
+$var reg 8 % B_tb [7:0] $end
+$var reg 1 & clk_tb $end
+$var reg 1 ' enable_tb $end
+$var reg 1 ( reset_tb $end
+$var integer 32 ) file [31:0] $end
+$var integer 32 * passed_test_cases [31:0] $end
+$var integer 32 + total_test_cases [31:0] $end
+$scope module U_ALU $end
+$var wire 8 , A [7:0] $end
+$var wire 4 - ALU_function [3:0] $end
+$var wire 8 . B [7:0] $end
+$var wire 1 & clk $end
+$var wire 1 ' enable $end
+$var wire 1 ( reset $end
+$var reg 16 / ALU_result [15:0] $end
+$var reg 1 ! ALU_result_valid $end
+$upscope $end
+$scope task initialize $end
+$upscope $end
+$scope task reset $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx /
+b0 .
+b0 -
+b0 ,
+b0 +
+b0 *
+b0 )
+x(
+0'
+0&
+b0 %
+b0 $
+b0 #
+bx "
+x!
+$end
+#13
+0!
+b0 "
+b0 /
+1&
+#25
+0(
+#26
+0&
+#39
+1&
+#50
+b101010 %
+b101010 .
+b1010100 $
+b1010100 ,
+1'
+1(
+#52
+0&
+#65
+1!
+b1111110 "
+b1111110 /
+1&
+#75
+b1 #
+b1 -
+b1 +
+b1 *
+#78
+0&
+#91
+b101010 "
+b101010 /
+1&
+#100
+b10 #
+b10 -
+b10 +
+b10 *
+#104
+0&
+#117
+b110111001000 "
+b110111001000 /
+1&
+#125
+b11 #
+b11 -
+b11 +
+b11 *
+#130
+0&
+#143
+b10 "
+b10 /
+1&
+#150
+b100 #
+b100 -
+b101111 %
+b101111 .
+b100 +
+b100 *
+#156
+0&
+#169
+b100 "
+b100 /
+1&
+#175
+b101 #
+b101 -
+b101100 %
+b101100 .
+b11110100 $
+b11110100 ,
+b101 +
+b101 *
+#182
+0&
+#195
+b11111100 "
+b11111100 /
+1&
+#200

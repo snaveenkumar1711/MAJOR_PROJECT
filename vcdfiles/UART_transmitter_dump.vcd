@@ -1,0 +1,544 @@
+$date
+	Wed May 14 23:03:27 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module UART_transmitter_tb $end
+$var wire 1 ! serial_data_out_tb $end
+$var wire 1 " busy_tb $end
+$var reg 1 # clk_tb $end
+$var reg 1 $ data_valid_tb $end
+$var reg 8 % parallel_data_tb [7:0] $end
+$var reg 1 & parity_enable_tb $end
+$var reg 1 ' parity_type_tb $end
+$var reg 1 ( reset_tb $end
+$var reg 11 ) transmitter_output [10:0] $end
+$var integer 32 * file [31:0] $end
+$var integer 32 + i [31:0] $end
+$var integer 32 , passed_test_cases [31:0] $end
+$var integer 32 - total_test_cases [31:0] $end
+$scope module U_UART_transmitter $end
+$var wire 1 # clk $end
+$var wire 1 $ data_valid $end
+$var wire 8 . parallel_data [7:0] $end
+$var wire 1 & parity_enable $end
+$var wire 1 ' parity_type $end
+$var wire 1 ( reset $end
+$var wire 1 / serial_enable $end
+$var wire 1 ! serial_data_out $end
+$var wire 3 0 serial_data_index [2:0] $end
+$var wire 1 1 serial_data $end
+$var wire 1 2 parity_bit $end
+$var wire 1 " busy $end
+$var wire 2 3 bit_select [1:0] $end
+$scope module U_UART_transmitter_FSM $end
+$var wire 1 # clk $end
+$var wire 1 $ data_valid $end
+$var wire 1 & parity_enable $end
+$var wire 1 ( reset $end
+$var wire 3 4 serial_data_index [2:0] $end
+$var reg 2 5 bit_select [1:0] $end
+$var reg 1 " busy $end
+$var reg 3 6 current_state [2:0] $end
+$var reg 3 7 next_state [2:0] $end
+$var reg 4 8 serial_data_transmission_state [3:0] $end
+$var reg 1 / serial_enable $end
+$upscope $end
+$scope module U_output_multiplexer $end
+$var wire 2 9 bit_select [1:0] $end
+$var wire 1 1 serial_data $end
+$var wire 1 2 parity_bit $end
+$var reg 1 ! mux_out $end
+$upscope $end
+$scope module U_parity_calculator $end
+$var wire 1 # clk $end
+$var wire 1 $ data_valid $end
+$var wire 8 : parallel_data [7:0] $end
+$var wire 1 & parity_enable $end
+$var wire 1 ' parity_type $end
+$var wire 1 ( reset $end
+$var reg 1 2 parity_bit $end
+$upscope $end
+$scope module U_serializer $end
+$var wire 1 # clk $end
+$var wire 8 ; parallel_data [7:0] $end
+$var wire 1 ( reset $end
+$var wire 3 < serial_data_index [2:0] $end
+$var wire 1 / serial_enable $end
+$var wire 1 = D_serial_data $end
+$var reg 1 1 serial_data $end
+$upscope $end
+$upscope $end
+$scope task initialize $end
+$upscope $end
+$scope task reset $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+x=
+bx <
+b0 ;
+b0 :
+bx 9
+bx 8
+b0 7
+bx 6
+bx 5
+bx 4
+bx 3
+x2
+x1
+bx 0
+x/
+b0 .
+b0 -
+b0 ,
+bx +
+b10000000000000000000000000000011 *
+bx )
+1(
+0'
+0&
+b0 %
+0$
+0#
+x"
+x!
+$end
+#4381000
+1!
+0=
+b0 0
+b0 4
+b0 <
+b1 3
+b1 5
+b1 9
+0/
+0"
+b0 8
+b0 6
+1#
+#8762000
+02
+01
+0#
+0(
+#13143000
+1#
+#17524000
+b1 7
+0#
+b11100110 %
+b11100110 .
+b11100110 :
+b11100110 ;
+1$
+1&
+1(
+#21905000
+0!
+b0 3
+b0 5
+b0 9
+1/
+1"
+b10 7
+12
+b1 6
+1#
+#26286000
+0#
+b1 +
+bx0 )
+0$
+#30667000
+1=
+b1 0
+b1 4
+b1 <
+b10 3
+b10 5
+b10 9
+b1 8
+b10 6
+1#
+#35048000
+0#
+b10 +
+bx00 )
+#39429000
+1!
+b10 0
+b10 4
+b10 <
+11
+b10 8
+1#
+#43810000
+0#
+b11 +
+bx100 )
+#48191000
+0=
+b11 0
+b11 4
+b11 <
+b11 8
+1#
+#52572000
+0#
+b100 +
+bx1100 )
+#56953000
+0!
+b100 0
+b100 4
+b100 <
+01
+b100 8
+1#
+#61334000
+0#
+b101 +
+bx01100 )
+#65715000
+1=
+b101 0
+b101 4
+b101 <
+b101 8
+1#
+#70096000
+0#
+b110 +
+bx001100 )
+#74477000
+1!
+b110 0
+b110 4
+b110 <
+11
+b110 8
+1#
+#78858000
+0#
+b111 +
+bx1001100 )
+#83239000
+b111 0
+b111 4
+b111 <
+b111 8
+1#
+#87620000
+0#
+b1000 +
+bx11001100 )
+#92001000
+0/
+b11 7
+0=
+b0 0
+b0 4
+b0 <
+b1000 8
+1#
+#96382000
+0#
+b1001 +
+bx111001100 )
+#100763000
+b11 3
+b11 5
+b11 9
+b100 7
+b0 8
+b11 6
+1#
+#105144000
+0#
+b1010 +
+bx1111001100 )
+#109525000
+b1 3
+b1 5
+b1 9
+b0 7
+b100 6
+1#
+#113906000
+0#
+b1 -
+b1 ,
+b1011 +
+b11111001100 )
+#118287000
+0"
+b0 6
+1#
+#122668000
+b1 7
+0#
+1=
+b11111111 %
+b11111111 .
+b11111111 :
+b11111111 ;
+1$
+1'
+#127049000
+0!
+b0 3
+b0 5
+b0 9
+1/
+1"
+b10 7
+b1 6
+1#
+#131430000
+0#
+b1 +
+0$
+#135811000
+1!
+b1 0
+b1 4
+b1 <
+b10 3
+b10 5
+b10 9
+b1 8
+b10 6
+1#
+#140192000
+0#
+b10 +
+b11111001110 )
+#144573000
+b10 0
+b10 4
+b10 <
+b10 8
+1#
+#148954000
+0#
+b11 +
+#153335000
+b11 0
+b11 4
+b11 <
+b11 8
+1#
+#157716000
+0#
+b100 +
+#162097000
+b100 0
+b100 4
+b100 <
+b100 8
+1#
+#166478000
+0#
+b101 +
+b11111011110 )
+#170859000
+b101 0
+b101 4
+b101 <
+b101 8
+1#
+#175240000
+0#
+b110 +
+b11111111110 )
+#179621000
+b110 0
+b110 4
+b110 <
+b110 8
+1#
+#184002000
+0#
+b111 +
+#188383000
+b111 0
+b111 4
+b111 <
+b111 8
+1#
+#192764000
+0#
+b1000 +
+#197145000
+0/
+b11 7
+b0 0
+b0 4
+b0 <
+b1000 8
+1#
+#201526000
+0#
+b1001 +
+#205907000
+b11 3
+b11 5
+b11 9
+b100 7
+b0 8
+b11 6
+1#
+#210288000
+0#
+b1010 +
+#214669000
+b1 3
+b1 5
+b1 9
+b0 7
+b100 6
+1#
+#219050000
+0#
+b10 -
+b10 ,
+b1011 +
+#223431000
+0"
+b0 6
+1#
+#227812000
+b1 7
+0#
+0=
+b11110100 %
+b11110100 .
+b11110100 :
+b11110100 ;
+1$
+0&
+0'
+#232193000
+0!
+b0 3
+b0 5
+b0 9
+1/
+1"
+b10 7
+b1 6
+1#
+#236574000
+0#
+b1 +
+0$
+#240955000
+b1 0
+b1 4
+b1 <
+b10 3
+b10 5
+b10 9
+b1 8
+b10 6
+01
+1#
+#245336000
+0#
+b10 +
+b11111111100 )
+#249717000
+1=
+b10 0
+b10 4
+b10 <
+b10 8
+1#
+#254098000
+0#
+b11 +
+b11111111000 )
+#258479000
+0=
+b11 0
+b11 4
+b11 <
+1!
+b11 8
+11
+1#
+#262860000
+0#
+b100 +
+#267241000
+0!
+1=
+b100 0
+b100 4
+b100 <
+01
+b100 8
+1#
+#271622000
+0#
+b101 +
+b11111101000 )
+#276003000
+b101 0
+b101 4
+b101 <
+1!
+b101 8
+11
+1#
+#280384000
+0#
+b110 +
+#284765000
+b110 0
+b110 4
+b110 <
+b110 8
+1#
+#289146000
+0#
+b111 +
+#293527000
+b111 0
+b111 4
+b111 <
+b111 8
+1#
+#297908000
+0#
+b1000 +
+#302289000
+0/
+b100 7
+0=
+b0 0
+b0 4
+b0 <
+b1000 8
+1#
+#306670000
+0#
+b1001 +
+#311051000
+b1 3
+b1 5
+b1 9
+b0 7
+b0 8
+b100 6
+1#
+#315432000

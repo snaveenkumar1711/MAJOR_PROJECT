@@ -1,0 +1,70 @@
+UART Receiver (uart_rx)
+
+1. Project Overview
+This project implements a UART (Universal Asynchronous Receiver Transmitter) Receiver Module in Verilog. The receiver will take in serial data over a single line (`rx`) and convert it into 8-bit parallel data (`data`), with a signal (`done`) indicating when the byte has been received.
+
+The design follows a Finite State Machine (FSM) approach with states:
+- IDLE
+- START
+- DATA
+- STOP
+
+---
+
+2. UART Receiver Block Diagram
+
+            +------------------------+
+            |                        |
+    rx ---->|     UART Receiver      |----> data[7:0]
+            |                        |----> done
+            +------------------------+
+                    ↑   ↑    ↑
+                 clk  rst  internal FSM
+
+---
+
+3. Port Descriptions
+
+| Signal | Direction | Width | Description                      |
+|--------|-----------|-------|----------------------------------|
+| clk    | Input     | 1     | System clock                     |
+| rst    | Input     | 1     | Active-high asynchronous reset   |
+| rx     | Input     | 1     | Serial data input                |
+| data   | Output    | 8     | Parallel 8-bit output            |
+| done   | Output    | 1     | High when byte is received       |
+
+---
+
+4. Design Assumptions
+
+- The baud rate is set to 115200.
+- The system clock is assumed to be 50 MHz.
+- 1 Start bit (Low), 8 data bits (LSB first), 1 Stop bit (High).
+- No parity or error checking is implemented.
+
+---
+
+5. Internal Working
+
+- IDLE: Wait for `rx` to go low (start bit).
+- START: Wait half a baud period to sample in the middle of the start bit.
+- DATA: Sample 8 bits at full baud intervals.
+- STOP: Sample 1 stop bit.
+- done: Goes high for one cycle after 8 bits and stop bit are successfully received.
+
+---
+
+6. Future Enhancements
+
+- Add parity checking.
+- Add noise filtering or glitch rejection on the `rx` line.
+- Parameterize number of data bits and stop bits.
+
+---
+
+7. File Info
+
+- RTL: `rtl/uart_rx.v`
+- Testbench: `tb/uart_rx_tb.v`
+- Simulator: ModelSim 
+
