@@ -1,0 +1,385 @@
+$date
+	Thu May 15 20:12:30 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module bus_synchronizer_tb $end
+$var wire 4 ! synchronous_data_tb [3:0] $end
+$var reg 4 " asynchronous_data_tb [3:0] $end
+$var reg 1 # clk_tb $end
+$var reg 1 $ reset_tb $end
+$var integer 32 % i [31:0] $end
+$var integer 32 & j [31:0] $end
+$scope module U_bus_synchronizer $end
+$var wire 4 ' asynchronous_data [3:0] $end
+$var wire 1 # clk $end
+$var wire 1 $ reset $end
+$var wire 4 ( synchronous_data [3:0] $end
+$scope begin register_instance[1] $end
+$scope module U_register $end
+$var wire 4 ) D [3:0] $end
+$var wire 1 # clk $end
+$var wire 1 $ reset $end
+$var reg 4 * Q [3:0] $end
+$upscope $end
+$upscope $end
+$scope module U0_register $end
+$var wire 4 + D [3:0] $end
+$var wire 1 # clk $end
+$var wire 1 $ reset $end
+$var reg 4 , Q [3:0] $end
+$upscope $end
+$upscope $end
+$scope task initialize $end
+$upscope $end
+$scope task reset $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx ,
+b0 +
+bx *
+bx )
+bx (
+b0 '
+b0 &
+bx %
+1$
+0#
+b0 "
+bx !
+$end
+#6
+b0 )
+b0 ,
+1#
+#12
+b1 &
+b0 !
+b0 (
+b0 *
+0#
+0$
+#18
+1#
+#24
+0#
+1$
+#30
+1#
+#36
+0#
+#42
+b1 "
+b1 '
+b1 +
+1#
+b1 %
+#48
+0#
+#54
+b1 )
+b1 ,
+1#
+#60
+0#
+#66
+b10 &
+b1 !
+b1 (
+b1 *
+1#
+#72
+b11 "
+b11 '
+b11 +
+0#
+b10 %
+#78
+b11 )
+b11 ,
+1#
+#84
+0#
+#90
+b11 &
+b11 !
+b11 (
+b11 *
+1#
+#96
+0#
+#102
+b10 "
+b10 '
+b10 +
+1#
+b11 %
+#108
+0#
+#114
+b10 )
+b10 ,
+1#
+#120
+0#
+#126
+b100 &
+b10 !
+b10 (
+b10 *
+1#
+#132
+b110 "
+b110 '
+b110 +
+0#
+b100 %
+#138
+b110 )
+b110 ,
+1#
+#144
+0#
+#150
+b101 &
+b110 !
+b110 (
+b110 *
+1#
+#156
+0#
+#162
+b111 "
+b111 '
+b111 +
+1#
+b101 %
+#168
+0#
+#174
+b111 )
+b111 ,
+1#
+#180
+0#
+#186
+b110 &
+b111 !
+b111 (
+b111 *
+1#
+#192
+b101 "
+b101 '
+b101 +
+0#
+b110 %
+#198
+b101 )
+b101 ,
+1#
+#204
+0#
+#210
+b111 &
+b101 !
+b101 (
+b101 *
+1#
+#216
+0#
+#222
+b100 "
+b100 '
+b100 +
+1#
+b111 %
+#228
+0#
+#234
+b100 )
+b100 ,
+1#
+#240
+0#
+#246
+b1000 &
+b100 !
+b100 (
+b100 *
+1#
+#252
+b1100 "
+b1100 '
+b1100 +
+0#
+b1000 %
+#258
+b1100 )
+b1100 ,
+1#
+#264
+0#
+#270
+b1001 &
+b1100 !
+b1100 (
+b1100 *
+1#
+#276
+0#
+#282
+b1101 "
+b1101 '
+b1101 +
+1#
+b1001 %
+#288
+0#
+#294
+b1101 )
+b1101 ,
+1#
+#300
+0#
+#306
+b1010 &
+b1101 !
+b1101 (
+b1101 *
+1#
+#312
+b1111 "
+b1111 '
+b1111 +
+0#
+b1010 %
+#318
+b1111 )
+b1111 ,
+1#
+#324
+0#
+#330
+b1011 &
+b1111 !
+b1111 (
+b1111 *
+1#
+#336
+0#
+#342
+b1110 "
+b1110 '
+b1110 +
+1#
+b1011 %
+#348
+0#
+#354
+b1110 )
+b1110 ,
+1#
+#360
+0#
+#366
+b1100 &
+b1110 !
+b1110 (
+b1110 *
+1#
+#372
+b1010 "
+b1010 '
+b1010 +
+0#
+b1100 %
+#378
+b1010 )
+b1010 ,
+1#
+#384
+0#
+#390
+b1101 &
+b1010 !
+b1010 (
+b1010 *
+1#
+#396
+0#
+#402
+b1011 "
+b1011 '
+b1011 +
+1#
+b1101 %
+#408
+0#
+#414
+b1011 )
+b1011 ,
+1#
+#420
+0#
+#426
+b1110 &
+b1011 !
+b1011 (
+b1011 *
+1#
+#432
+b1001 "
+b1001 '
+b1001 +
+0#
+b1110 %
+#438
+b1001 )
+b1001 ,
+1#
+#444
+0#
+#450
+b1111 &
+b1001 !
+b1001 (
+b1001 *
+1#
+#456
+0#
+#462
+b1000 "
+b1000 '
+b1000 +
+1#
+b1111 %
+#468
+0#
+#474
+b1000 )
+b1000 ,
+1#
+#480
+0#
+#486
+b10000 &
+b1000 !
+b1000 (
+b1000 *
+1#
+#492
+0#
+b10000 %
+#498
+1#
+#504
+0#
+#510
