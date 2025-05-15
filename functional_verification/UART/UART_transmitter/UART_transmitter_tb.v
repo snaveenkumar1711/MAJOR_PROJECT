@@ -1,5 +1,5 @@
-`include "/home/naveensodad/Major_project/RTL/UART/UART_transmitter/UART_transmitter.v"
-`include "../../../RTL/UART/UART_transmitter/UART_transmitter.v"
+`include "/home/naveensodad/MAJOR_PROJECT/RTL/UART/UART_transmitter/UART_transmitter.v"
+`include "/home/naveensodad/MAJOR_PROJECT/RTL/UART/UART_transmitter/UART_transmitter.v"
 `timescale 1ns/1ps
 
 module UART_transmitter_tb;
@@ -36,11 +36,11 @@ module UART_transmitter_tb;
     initial 
     begin
         $timeformat(-9, 2, " ns", 20);
-        file = $fopen("/home/naveensodad/Major_project/output/UART_transmitter_output.txt", "w");
+        file = $fopen("/home/naveensodad/MAJOR_PROJECT/output/UART_transmitter_output.txt", "w");
         passed_test_cases = 0;
         total_test_cases = 0;
 
-    	$dumpfile("/home/naveensodad/Major_project/vcdfiles/UART_transmitter_dump.vcd");
+    	$dumpfile("/home/naveensodad/MAJOR_PROJECT/vcdfiles/UART_transmitter_dump.vcd");
 	$dumpvars(0,UART_transmitter_tb);    
 
         file = $fopen("output.txt", "w");

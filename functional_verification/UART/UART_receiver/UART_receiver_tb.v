@@ -1,4 +1,4 @@
-`include "/home/naveensodad/Major_project/RTL/UART/UART_receiver/UART_receiver.v"
+`include "/home/naveensodad/MAJOR_PROJECT/RTL/UART/UART_receiver/UART_receiver.v"
 `timescale 1ns/1ps
 
 module UART_receiver_tb;
@@ -35,10 +35,10 @@ module UART_receiver_tb;
     initial 
     begin
         $timeformat(-9, 2, " ns", 20);
-        file = $fopen("/home/naveensodad/Major_project/output/UART_receiver_output.txt", "w");
+        file = $fopen("/home/naveensodad/MAJOR_PROJECT/output/UART_receiver_output.txt", "w");
         passed_test_cases = 0;
         total_test_cases = 0;
-	$dumpfile("/home/naveensodad/Major_project/vcdfiles/UART_receiver_dump.vcd");
+	$dumpfile("/home/naveensodad/MAJOR_PROJECT/vcdfiles/UART_receiver_dump.vcd");
 	$dumpvars(0,UART_receiver_tb);
 
         initialize();

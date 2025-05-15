@@ -1,4 +1,4 @@
-`include "../../RTL/bus_synchronizer/bus_synchronizer.v"
+`include "/home/naveensodad/MAJOR_PROJECT/RTL/bus_synchronizer/bus_synchronizer.v"
 `timescale 1ns/1ns
 
 module bus_synchronizer_tb ();

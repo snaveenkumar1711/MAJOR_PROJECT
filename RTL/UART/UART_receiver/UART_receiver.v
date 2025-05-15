@@ -1,10 +1,10 @@
-`include "/home/naveensodad/Major_project/RTL/UART/UART_receiver/UART_receiver_FSM.v"
-`include "/home/naveensodad/Major_project/RTL/UART/UART_receiver/data_sampler.v"
-`include "/home/naveensodad/Major_project/RTL/UART/UART_receiver/deserializer.v"
-`include "/home/naveensodad/Major_project/RTL/UART/UART_receiver/edge_counter.v"
-`include "/home/naveensodad/Major_project/RTL/UART/UART_receiver/start_bit_checker.v"
-`include "/home/naveensodad/Major_project/RTL/UART/UART_receiver/parity_bit_checker.v"
-`include "/home/naveensodad/Major_project/RTL/UART/UART_receiver/stop_bit_checker.v"
+`include "/home/naveensodad/MAJOR_PROJECT/RTL/UART/UART_receiver/UART_receiver_FSM.v"
+`include "/home/naveensodad/MAJOR_PROJECT/RTL/UART/UART_receiver/data_sampler.v"
+`include "/home/naveensodad/MAJOR_PROJECT/RTL/UART/UART_receiver/deserializer.v"
+`include "/home/naveensodad/MAJOR_PROJECT/RTL/UART/UART_receiver/edge_counter.v"
+`include "/home/naveensodad/MAJOR_PROJECT/RTL/UART/UART_receiver/start_bit_checker.v"
+`include "/home/naveensodad/MAJOR_PROJECT/RTL/UART/UART_receiver/parity_bit_checker.v"
+`include "/home/naveensodad/MAJOR_PROJECT/RTL/UART/UART_receiver/stop_bit_checker.v"
 
 module UART_receiver #(
     parameter DATA_WIDTH = 8

@@ -1,7 +1,6 @@
-`include "/home/naveensodad/Major_project/RTL/UART/UART_transmitter/UART_transmitter.v"
-`include "/home/naveensodad/Major_project/RTL/UART/UART_receiver/UART_receiver.v"
-`include "../UART_transmitter/UART_transmitter.v"
-`include "../UART_receiver/UART_receiver.v"
+`include "/home/naveensodad/MAJOR_PROJECT/RTL/UART/UART_transmitter/UART_transmitter.v"
+`include "/home/naveensodad/MAJOR_PROJECT/RTL/UART/UART_receiver/UART_receiver.v"
+
 
 module UART #(
     parameter DATA_WIDTH = 8

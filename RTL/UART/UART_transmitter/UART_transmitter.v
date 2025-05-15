@@ -1,11 +1,8 @@
-`include "/home/naveensodad/Major_project/RTL/UART/UART_transmitter/UART_transmitter_FSM.v"
-`include "/home/naveensodad/Major_project/RTL/UART/UART_transmitter/serializer.v"
-`include "/home/naveensodad/Major_project/RTL/UART/UART_transmitter/parity_calculator.v"
-`include "/home/naveensodad/Major_project/RTL/UART/UART_transmitter/output_multiplexer.v"
-`include "UART_transmitter_FSM.v"
-`include "serializer.v"
-`include "parity_calculator.v"
-`include "output_multiplexer.v"
+`include "/home/naveensodad/MAJOR_PROJECT/RTL/UART/UART_transmitter/UART_transmitter_FSM.v"
+`include "/home/naveensodad/MAJOR_PROJECT/RTL/UART/UART_transmitter/serializer.v"
+`include "/home/naveensodad/MAJOR_PROJECT/RTL/UART/UART_transmitter/parity_calculator.v"
+`include "/home/naveensodad/MAJOR_PROJECT/RTL/UART/UART_transmitter/output_multiplexer.v"
+
 
 module UART_transmitter #(
     parameter DATA_WIDTH = 8

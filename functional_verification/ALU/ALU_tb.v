@@ -1,4 +1,4 @@
-`include "/home/naveensodad/Major_project/RTL/ALU/ALU.v"
+`include "/home/naveensodad/MAJOR_PROJECT/RTL/ALU/ALU.v"
 `timescale 1ns/1ns
 
 module ALU_tb ();
@@ -26,7 +26,7 @@ module ALU_tb ();
         passed_test_cases = 0;
         total_test_cases = 0;
 	
-    	$dumpfile("/home/naveensodad/Major_project/vcdfiles/ALU_wave.vcd");
+    	$dumpfile("/home/naveensodad/MAJOR_PROJECT/vcdfiles/ALU_wave.vcd");
     	$dumpvars(0, ALU_tb);
 
 
