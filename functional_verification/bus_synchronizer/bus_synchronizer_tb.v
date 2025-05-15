@@ -41,7 +41,7 @@ module bus_synchronizer_tb ();
     begin
         
         $timeformat(-9, 2, " ns", 20);
-        $readmemb("/home/naveensodad/MAJOR_PROJECT/input/gray_codes.txt", gray_codes);
+        $readmemb("/home/naveensodad/MAJOR_PROJECT/functional_verification/bus_synchronizer/gray_codes.txt", gray_codes);
         $monitor("time = %0t, synchronous_data = %b", $time, synchronous_data_tb);
         j = 0;
 	$dumpfile("/home/naveensodad/MAJOR_PROJECT/vcdfiles/bus_synchronizer_dump.vcd");
