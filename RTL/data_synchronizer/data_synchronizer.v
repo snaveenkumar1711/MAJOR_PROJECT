@@ -1,5 +1,4 @@
-`include "/home/naveensodad/Major_project/RTL/bus_synchronizer/bus_synchronizer.v"
-`include "../bus_synchronizer/bus_synchronizer.v"
+`include "/home/naveensodad/MAJOR_PROJECT/RTL/bus_synchronizer/bus_synchronizer.v"
 
 module data_synchronizer #(
     parameter STAGE_COUNT = 2,

@@ -1,7 +1,5 @@
-`include "/home/naveensodad/Major_project/RTL/system_controller/UART_receiver_controller.v"
-`include "/home/naveensodad/Major_project/RTL/system_controller/UART_transmitter_controller.v"
-`include "UART_receiver_controller.v"
-`include "UART_transmitter_controller.v"
+`include "/home/naveensodad/MAJOR_PROJECT/RTL/system_controller/UART_receiver_controller.v"
+`include "/home/naveensodad/MAJOR_PROJECT/RTL/system_controller/UART_transmitter_controller.v"
 
 module system_controller #(
     parameter DATA_WIDTH = 8,

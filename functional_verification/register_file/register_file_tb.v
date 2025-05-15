@@ -1,4 +1,4 @@
-`include "../../RTL/register_file/register_file.v"
+`include "/home/naveensodad/MAJOR_PROJECT/RTL/register_file/register_file.v"
 `timescale 1ns/1ps
 
 module register_file_tb ();

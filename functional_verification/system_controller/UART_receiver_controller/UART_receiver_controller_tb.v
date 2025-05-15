@@ -1,4 +1,4 @@
-`include "../../../RTL/system_controller/UART_receiver_controller.v"
+`include "/home/naveensodad/MAJOR_PROJECT/RTL/system_controller/UART_receiver_controller.v"
 `timescale 1ns/1ps
 
 module UART_receiver_controller_tb;

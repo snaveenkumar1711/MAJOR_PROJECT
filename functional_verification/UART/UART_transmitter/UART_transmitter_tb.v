@@ -1,5 +1,4 @@
 `include "/home/naveensodad/MAJOR_PROJECT/RTL/UART/UART_transmitter/UART_transmitter.v"
-`include "/home/naveensodad/MAJOR_PROJECT/RTL/UART/UART_transmitter/UART_transmitter.v"
 `timescale 1ns/1ps
 
 module UART_transmitter_tb;

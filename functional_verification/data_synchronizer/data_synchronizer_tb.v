@@ -1,4 +1,4 @@
-`include "../../RTL/data_synchronizer/data_synchronizer.v"
+`include "/home/naveensodad/MAJOR_PROJECT/RTL/data_synchronizer/data_synchronizer.v"
 
 module data_synchronizer_tb ();
     parameter STAGE_COUNT = 2;
