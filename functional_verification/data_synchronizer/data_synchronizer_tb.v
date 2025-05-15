@@ -35,7 +35,7 @@ module data_synchronizer_tb ();
     initial 
     begin
         $timeformat(-9, 2, " ns", 20);
-        $readmemb("inputs.txt", input_data);        
+        $readmemb("/home/naveensodad/MAJOR_PROJECT/input/inputs.txt", input_data);        
         file = $fopen("output.txt", "w");
         total_test_cases = 2 ** BUS_WIDTH;
         passed_test_cases = 0;

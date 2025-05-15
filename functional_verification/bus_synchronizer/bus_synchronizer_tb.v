@@ -41,11 +41,13 @@ module bus_synchronizer_tb ();
     begin
         
         $timeformat(-9, 2, " ns", 20);
-        $readmemb("gray_codes.txt", gray_codes);
+        $readmemb("/home/naveensodad/MAJOR_PROJECT/input/gray_codes.txt", gray_codes);
         $monitor("time = %0t, synchronous_data = %b", $time, synchronous_data_tb);
         j = 0;
-        initialize();
-        reset();
+	$dumpfile("/home/naveensodad/MAJOR_PROJECT/vcdfiles/bus_synchronizer_dump.vcd");
+	$dumpvars(0, bus_synchronizer_tb);
+        initialize;
+        reset;
         
         #(1.5 * DESTINATION_CLK_PERIOD);
 
