@@ -35,13 +35,14 @@ module data_synchronizer_tb ();
     initial 
     begin
         $timeformat(-9, 2, " ns", 20);
-        $readmemb("/home/naveensodad/MAJOR_PROJECT/input/inputs.txt", input_data);        
-        file = $fopen("output.txt", "w");
+        $readmemb("/home/naveensodad/MAJOR_PROJECT/functional_verification/data_synchronizer/inputs.txt", input_data);        
+        file = $fopen("/home/naveensodad/MAJOR_PROJECT/output/data_synchronizer_output.txt", "w");
         total_test_cases = 2 ** BUS_WIDTH;
         passed_test_cases = 0;
         initialize();
         reset();
-        
+        $dumpfile("/home/naveensodad/MAJOR_PROJECT/vcdfiles/data_synchronizer_dump.vcd");
+	$dumpvars(0, data_synchronizer_tb); 
 
         for (i = 0; i < 2 ** BUS_WIDTH; i = i + 1) begin
             asynchronous_data_tb = input_data[i];

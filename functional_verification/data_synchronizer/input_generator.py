@@ -2,7 +2,7 @@ import sys
 import re
 
 input_length_pattern = r'^\s*parameter\s+BUS_WIDTH\s*=\s*\d+\s*;\s*$'
-tb_file = open('data_synchronizer_tb.v', 'r')
+tb_file = open('/home/naveensodad/MAJOR_PROJECT/data_synchronizer/data_synchronizer_tb.v', 'r')
 code = tb_file.read()
 input_length = int(re.search(input_length_pattern, code, re.MULTILINE).group(0).split('=')[-1].strip().replace(';', ''))
 
@@ -16,7 +16,7 @@ for i in range(input_length):
     random.shuffle(input)
     inputs.append(input)
 
-inputs_file = open('inputs.txt', 'w')
+inputs_file = open('/home/naveensodad/MAJOR_PROJECT/data_synchronizer/inputs.txt', 'w')
 
 for i in range(len(inputs[input_length - 1])):
     inputs_file.write(inputs[input_length - 1][i])
