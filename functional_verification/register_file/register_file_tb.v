@@ -33,10 +33,12 @@ module register_file_tb ();
 
     initial begin
         $timeformat(-9, 2, " ns", 20);
-        file = $fopen("output.txt", "w");
+        file = $fopen("/home/naveensodad/MAJOR_PROJECT/output/register_file_output.txt", "w");
         passed_test_cases = 0;
         total_test_cases = 0;
 
+	$dumpfile("/home/naveensodad/MAJOR_PROJECT/vcdfiles/register_file_dump.vcd");
+	$dumpvars(0, register_file_tb); 
         initialize();
         reset();
 

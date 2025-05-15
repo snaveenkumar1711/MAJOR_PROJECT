@@ -1,0 +1,112 @@
+$date
+	Thu May 15 22:43:18 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module register_file_tb $end
+$var wire 8 ! register3_tb [7:0] $end
+$var wire 8 " register2_tb [7:0] $end
+$var wire 8 # register1_tb [7:0] $end
+$var wire 8 $ register0_tb [7:0] $end
+$var wire 1 % read_data_valid_tb $end
+$var wire 8 & read_data_tb [7:0] $end
+$var reg 4 ' address_tb [3:0] $end
+$var reg 1 ( clk_tb $end
+$var reg 1 ) read_enable_tb $end
+$var reg 1 * reset_tb $end
+$var reg 8 + write_data_tb [7:0] $end
+$var reg 1 , write_enable_tb $end
+$var integer 32 - file [31:0] $end
+$var integer 32 . passed_test_cases [31:0] $end
+$var integer 32 / total_test_cases [31:0] $end
+$scope module U_register_file $end
+$var wire 4 0 address [3:0] $end
+$var wire 1 ( clk $end
+$var wire 1 ) read_enable $end
+$var wire 8 1 register0 [7:0] $end
+$var wire 8 2 register1 [7:0] $end
+$var wire 8 3 register2 [7:0] $end
+$var wire 8 4 register3 [7:0] $end
+$var wire 1 * reset $end
+$var wire 8 5 write_data [7:0] $end
+$var wire 1 , write_enable $end
+$var reg 8 6 read_data [7:0] $end
+$var reg 1 % read_data_valid $end
+$var integer 32 7 i [31:0] $end
+$upscope $end
+$scope task initialize $end
+$upscope $end
+$scope task reset $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx 7
+bx 6
+b0 5
+bx 4
+bx 3
+bx 2
+bx 1
+b0 0
+b0 /
+b0 .
+b10000000000000000000000000000011 -
+0,
+b0 +
+x*
+0)
+0(
+b0 '
+bx &
+x%
+bx $
+bx #
+bx "
+bx !
+$end
+#12500
+0%
+1(
+#25000
+b0 &
+b0 6
+b1000 !
+b1000 4
+b1 "
+b1 3
+b0 #
+b0 2
+b0 $
+b0 1
+b10000 7
+0(
+0*
+#37500
+b10000 7
+1(
+#50000
+0(
+b11110100 +
+b11110100 5
+1,
+b1110 '
+b1110 0
+1*
+#62500
+1(
+#75000
+0(
+1)
+0,
+#87500
+1%
+b11110100 &
+b11110100 6
+1(
+#100000
