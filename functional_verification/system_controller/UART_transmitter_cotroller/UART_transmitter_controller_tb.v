@@ -37,13 +37,15 @@ module UART_transmitter_controller_tb;
 
     initial begin
         $timeformat(-9, 2, " ns", 20);
-        file = $fopen("output.txt", "w");
+        file = $fopen("/home/naveensodad/MAJOR_PROJECT/output/UART_transmitter_controller_output.txt", "w");
         passed_test_cases = 0;
         total_test_cases = 0;
         
         initialize();
         reset();
-
+	$dumpfile("/home/naveensodad/MAJOR_PROJECT/vcdfiles/UART_transmitter_controller_dump.vcd");
+	$dumpvars(0, UART_transmitter_controller_tb); 
+	
         // Test case (1)
         ALU_result_valid_tb = 1'b1;
         ALU_result_tb = 'b1110_0111_1010_0110;

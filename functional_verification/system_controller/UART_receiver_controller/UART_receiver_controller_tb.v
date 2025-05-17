@@ -44,12 +44,15 @@ module UART_receiver_controller_tb;
 
     initial begin
         $timeformat(-9, 2, " ns", 20);
-        file = $fopen("output.txt", "w");
+        file = $fopen("/home/naveensodad/MAJOR_PROJECT/output/UART_receiver_controller_output.txt", "w");
         passed_test_cases = 0;
         total_test_cases = 0;
         
         initialize();
         reset();
+	$dumpfile("/home/naveensodad/MAJOR_PROJECT/vcdfiles/UART_receiver_controller_tb_dump.vcd");
+	$dumpvars(0, UART_receiver_controller_tb); 
+
         enable_tb = 1'b1;
         
         // Test case (1)
