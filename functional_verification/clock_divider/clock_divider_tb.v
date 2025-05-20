@@ -20,7 +20,7 @@ module clock_divider_tb;
     always #20 reference_clk = ~reference_clk;
 
     initial begin
-        $dumpfile("/home/naveensodad/MAJOR_PROJECT/vcdfiles/clock_divider.vcd");  // Output VCD
+        $dumpfile("/home/naveensodad/MAJOR_PROJECT/vcdfiles/clock_divider_dump.vcd");  // Output VCD
         $dumpvars(0, clock_divider_tb);
 
         // Reset
