@@ -46,7 +46,7 @@ module system_top_tb;
         output_file = $fopen("/home/naveensodad/MAJOR_PROJECT/functional_verification/system_top/output_files/system_outputs_verilog.txt", "w");
         $readmemb("/home/naveensodad/MAJOR_PROJECT/functional_verification/system_top/test_cases.txt", test_cases);
 
-	$dumpfile("/home/naveensodad/MAJOR_PROJECT/vcdfiles/system_top_tb_dump.vcd");
+	$dumpfile("/home/naveensodad/MAJOR_PROJECT/vcdfiles/system_top_dump.vcd");
 	$dumpvars(0, system_top_tb);  
 
         initialize();

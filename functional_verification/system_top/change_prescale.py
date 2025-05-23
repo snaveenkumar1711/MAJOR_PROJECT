@@ -7,7 +7,7 @@ def write_prescale(prescale):
     prescale_pattern = r'^\s*localparam\s+PRESCALE\s*=\s*\d+\s*;\s*$'
     code = re.sub(prescale_pattern, '\n\tlocalparam PRESCALE = ' + str(prescale) + ';\n', code, flags=re.MULTILINE)
     
-    tb_file = open('/home/naveensodad/MAJOR_PROJECT/functional_verification/system_top/system_top_tb.v/system_top_tb.v', 'w')
+    tb_file = open('/home/naveensodad/MAJOR_PROJECT/functional_verification/system_top/system_top_tb.v', 'w')
     tb_file.write(code)
     tb_file.close()
 

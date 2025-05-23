@@ -30,7 +30,7 @@ def main():
     register_file_read(7)
     register_file_write(0, 10)
     ALU_operation_without_operands('-')
-    ALU_operation_without_operands('^')
+    ALU_operation_without_operands('&')
 
 
 def read_parameters():
